@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { BrowserRouter } from "react-router-dom";
+import TodoList from "./components/TodoList.jsx";
 function App() {
+
+  // function eresPendejo() {
+  //   var siONo = prompt("Eres Pendejo?");
+  //   if (siONo === "si") {
+  //     alert("MAC");
+  //   } else {
+  //     if (siONo === "no") {
+  //       let otra = prompt("Tienes novia o familia?");
+  //       if (otra === "si") {
+  //         alert("Windows");
+  //       } else {
+  //         alert("Linux");
+  //       }
+  //     } 
+  //   }
+  // }
+  // eresPendejo();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <TodoList />
+    </BrowserRouter>
   );
 }
 
